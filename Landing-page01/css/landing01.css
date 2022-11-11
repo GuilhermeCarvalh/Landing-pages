@@ -36,7 +36,7 @@ body{
 }
 
 #disclaimer h2{
-    font-size:3em;
+    font-size:7vw;
     margin-bottom:1em;
 }
 
@@ -202,3 +202,202 @@ body{
 
 }
 
+/*Event details container*/
+#details{
+    width:80%;
+    margin:0 auto;
+}
+
+.detail{
+    display:flex;
+    align-items: start;
+    justify-content:space-between;
+    gap:5%;
+    margin-bottom: 4em;
+    border:1px solid purple;
+}
+
+.detail img{
+    width:50%;
+}
+
+.detail h3{
+    margin-bottom:1em;
+    font-size:2em;
+    font-weight:500;
+}
+#details-1 h3{
+   border:1px solid #0000ff;
+   font-size:3em;
+   font-weight:700;
+}
+.detail-description{
+    border:2px solid pink;
+    width:100%;
+    padding-left:2em;
+
+}
+.detail-description ul {
+    list-style-position:inside;
+    border:1px solid black;
+}
+.detail-description ul li {
+    margin-bottom:0.4em;
+}
+.detail-description ul li:last-child{
+     font-weight:bold;
+}
+
+/* Call to Action Section */
+
+#cta{
+    height:300px;
+    background: linear-gradiante(rgb(0,0,0 0.8), rgb(0, 0, 0, 0.8));
+    background-image: url("../imagem/hrz-1.jpg");
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    color: var(--text-color);
+}
+#cta h3{
+    margin-bottom:1.2em ;
+    font-size:2em;
+    font-weight:500;
+}
+#cta .btn{
+    width:30%;
+    margin: 0 auto;
+    font-weight:600;
+    border-radius: 4px;
+    font-size:1.2em;
+}
+
+#cta .btn:hover{
+    border-radius:8px;
+    transition:0.7s;
+}
+/* Footer */
+#footer{
+    border:1px solid purple;
+    text-align:center;
+    color:var(--secondary);
+    height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#footer h3{
+    font-size:1.8em;
+    margin-bottom:0.5em;
+    font-weight:bold;
+    
+}
+#footer p:nth-child(2){
+    margin-bottom:1em;
+    font-size:1.2em;
+
+}
+#footer span {
+    font-weight:bold;
+}
+/*Tablet*/
+@media screen and(76){
+
+}
+/*Mobile*/
+
+@media (max-width:450px){
+   #event-description{
+    display:flex;
+     flex-direction:column;
+     height:auto;
+   }
+   #disclaimer{
+     padding:2em;
+   }
+   #disclaimer h2{
+     margin-bottom:0.5em;
+   }
+ #subscription-form{
+    max-width:70%;
+    margin-bottom:2em;
+ }
+ /*Benefits section*/
+  .benefits{
+    border:1px solid red;
+    flex-direction:column;
+    align-items:center;
+    width:auto;
+    padding:2em;
+  }
+  .benefit{
+    border:1px solid black;
+    max-width:100%;
+    margin-bottom:2em;
+  }
+  .benefits .benefit p {
+       
+       margin-bottom:3em;
+  }
+  /*Event location*/
+  #location{
+    display: flex;
+    flex-direction:column;
+    height:auto;
+    text-align:center;
+    padding:2em 0;
+  }
+  #adress{
+    order:2;
+    flex-direction:column;
+    max-width:100%;
+  }
+  #adress i {
+    margin:0.3em 0;
+  }
+  #about-location{
+     order:1;
+     border:1px solid black;
+     max-width:100%;
+  }
+  #about-location h3{
+    margin-bottom:0;
+  }
+  #about-location p {
+    display:none;
+  }
+  /*Event details container*/
+  .detail{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:0.5em;
+    gap:0;
+  }
+  .detail img{
+    width:100%;
+    margin:2em 0;
+  }
+  #detail-1 img{
+    display:none;
+  }
+  .detail-description{
+    padding:0px;
+  }
+  #detail-3 img {
+    order:2;
+  }
+  #detail-3 .detail-description{
+    order:1;
+  }
+  /*Call to action Section */
+  #cta{
+    text-align:center;
+  }
+ #cta .btn{
+    width:80%;
+
+ }
+}
